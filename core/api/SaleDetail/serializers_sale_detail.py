@@ -15,7 +15,7 @@ class SaleDetailSerializer(serializers.ModelSerializer):
             'quantity' : instance.cant,
             'price' : instance.product.get_price_discount if instance.product is not None else "",
             'image' : instance.product.image.url if instance.product is not None else "",
-            'total' : instance.sale.get_cart_total if instance.sale is not None else ""
+            'total' : instance.sale.total if instance.sale is not None else ""
         }
 
 class SaleDetailCreateSerializer(serializers.ModelSerializer):

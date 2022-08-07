@@ -20,7 +20,6 @@ function getData() {
             {"data": "user.full_name"},
             {"data": "user.dni"},
             {"data": "mobile"},
-            {"data": "user.email"},
             {"data": "address"},
             {"data": "id"},
         ],
